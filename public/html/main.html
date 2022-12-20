@@ -6,27 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Main Page</title>
     <link rel="stylesheet" href="../css/main.css">
+    <script src="../main.js"></script>
 </head>
 <body>
+    
 
+    <img src="../image/logo.png" alt="error" class="Home_logo">
     <div class="main">
         
-           
+        
+        
+        <div class="main_box">
+                    <div class="box_items">
 
-                <div class="main_box">
-                    <div class="logo_div">
-
-                        <img class="logo" src="../image/logo.png" alt="">
-                    </div>
-                    <div class="login_id_password">
-
-                            <input class="ID" type="text" placeholder="ID" required maxlength="10">
-                            <input class="PASSWORD" type="password" placeholder="password" required maxlength="15">
-                            <div class="buttons">
-                                <button class="login_button">로그인</button>
-                                <button class="join_button">회원가입</button>
-                            </div>
+                        <div class="logo_div">
+    
+                            <img class="logo" src="../image/logo.png" alt="">
                         </div>
+                        <div class="login_id_password">
+    
+                                <input class="ID" type="text" placeholder="ID" required maxlength="16">
+                                <div class="id_error_div">
+                                    
+                                    <a class="id_error">ID Error</a>
+                                </div>
+                                <input class="PASSWORD" type="password" placeholder="password" required maxlength="15">
+                                <div class="pw_error_div">
+                                    <a class="pw_error">PW Error</a>
+                                </div>
+                                <div class="buttons">
+                                    <form class="Login_form">
+                                        <button class="login_button BT">로그인</button>
+                                    </form>      
+                                    <button class="join_button BT">회원가입</button>
+                                   
+                                </div>
+                            </div>
+                    </div>
                     </div>
             </div>
         

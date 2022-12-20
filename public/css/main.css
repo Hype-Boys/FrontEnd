@@ -4,8 +4,9 @@ html{
     margin:0;
     background-color: black;
    
-    
-   
+}
+.aaa{
+    color:white;
 }
 
 .A{
@@ -20,6 +21,7 @@ html{
 .main{
     display: flex;
     justify-content: flex-end;
+ 
 }
 
 .main_box{
@@ -27,29 +29,33 @@ html{
     height: 62vh;
     border: 0.25px solid white;
     border-radius: 5px;
-    margin-top:20vh;
-    margin-right:7vw;
+    margin-top:16vh;
+    margin-right:5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
+   
 }
 
 .login_id_password{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top:8vh;
+    margin-top:4vh;
+}
+.box_items{
+    margin-bottom:30px;
 }
 
 .ID,
 .PASSWORD{
     width: 80%;
     display: flex;
-    height: 4.1vh;
+    height: 4.5vh;
     font-family:inherit;
     font-weight: bold;
     outline: red;    
-    font-size: 20px;
+    font-size: 19px;
     text-indent: 8px;
     border: 1px solid black;
     border-radius: 4px;
@@ -66,7 +72,7 @@ html{
 }
 
 .PASSWORD{
-    margin-top:6vh;
+    margin-top:4.5vh;
 }
 
 .buttons{
@@ -74,7 +80,7 @@ html{
     display: flex;
     width: 100%;
     position: relative;
-    top:6vh;
+    top:3vh;
    
 
 }
@@ -89,7 +95,21 @@ html{
     font-size:1.2rem;
     color:black;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+    transition: all 0.2s linear;
     
+}
+
+.BT:hover{
+    transform: scale(1.08);
+}
+
+.Home_logo{
+    transition: all 0.2s linear;
+}
+
+.Home_logo:hover{
+    transform: scale(1.08);
 }
 
 .login_button{
@@ -99,13 +119,38 @@ html{
 }
 
 .logo{
-    width: 120px;
+    width: 9vw;
     margin-bottom:0;
-    margin-top:0;
-    height: 120px;
+    margin-bottom:2vh;
+    height: 18vh;
   
 }
 .logo_div{
     display: flex;
     justify-content: center;
 }
+
+.id_error,
+.pw_error{
+    color:red
+    
+}
+
+.id_error_div,
+.pw_error_div{
+   width: 100%;
+   position: relative;
+   left:2.5vw;
+   margin-top:0.5vh;
+}
+
+.logo_main{
+    
+}
+
+.Home_logo{
+    width: 80px;
+    height: 80px;
+    padding: 15px 0 0 20px;
+}
+
