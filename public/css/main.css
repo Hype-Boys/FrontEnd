@@ -1,2 +1,88 @@
-@import url(./media.css);
-@import url(./style.css);
+body,
+html{
+    padding:0;
+    margin:0;
+    
+   
+}
+
+.main{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.main_box{
+    width: 26vw;
+    height: 62vh;
+    border: 0.25px solid white;
+    border-radius: 5px;
+    margin-top:20vh;
+    margin-right:7vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.login_id_password{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top:18vh;
+}
+
+.ID,
+.PASSWORD{
+    width: 80%;
+    display: flex;
+    height: 4.1vh;
+    font-family:inherit;
+    font-weight: bold;
+    outline: red;    
+    font-size: 20px;
+    text-indent: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.ID::placeholder{
+    font-size: 1.1rem;
+   
+}
+
+.PASSWORD::placeholder{
+    font-size: 1.1rem;
+   
+}
+
+.PASSWORD{
+    margin-top:6vh;
+}
+
+.buttons{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    position: relative;
+    top:6vh;
+   
+
+}
+
+.login_button,
+.join_button{
+    height: 8vh;
+    width: 8vw;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-weight: bold;
+    font-size:1.2rem;
+    color:black;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.login_button{
+   margin-right:4vw;
+   background-color: paleturquoise;
+  
+}

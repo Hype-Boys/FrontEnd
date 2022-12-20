@@ -1,1 +1,0 @@
-﻿# GHC-FrontEnd
