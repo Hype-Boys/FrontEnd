@@ -2,8 +2,19 @@ body,
 html{
     padding:0;
     margin:0;
+    background-color: black;
+   
     
    
+}
+
+.A{
+    width: 100%;
+}
+
+.B{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .main{
@@ -27,7 +38,7 @@ html{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top:18vh;
+    margin-top:8vh;
 }
 
 .ID,
@@ -85,4 +96,16 @@ html{
    margin-right:4vw;
    background-color: paleturquoise;
   
+}
+
+.logo{
+    width: 120px;
+    margin-bottom:0;
+    margin-top:0;
+    height: 120px;
+  
+}
+.logo_div{
+    display: flex;
+    justify-content: center;
 }
