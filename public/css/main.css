@@ -5,6 +5,9 @@ html{
     background-color: black;
    
 }
+
+
+
 .aaa{
     color:white;
 }
@@ -52,8 +55,8 @@ html{
     width: 80%;
     display: flex;
     height: 4.5vh;
-    font-family:inherit;
-    font-weight: bold;
+    font-family:'SDGothic',serif;
+    font-weight: bolder;
     outline: red;    
     font-size: 19px;
     text-indent: 8px;
@@ -82,7 +85,12 @@ html{
     position: relative;
     top:3vh;
    
+   
 
+}
+
+.BT{
+    cursor: pointer;
 }
 
 .login_button,
