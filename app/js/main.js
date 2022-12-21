@@ -5,6 +5,12 @@ function join() {
   window.location = "../../public/html/join.html";
 }
 
+HomeLogo.addEventListener("click", (event) => {
+  event.preventDefault();
+  window.location = "../../public/html/main.html"
+})
+
+
 
 
 joinbutton.addEventListener("click", (event) => {
