@@ -28,6 +28,7 @@ html{
 }
 
 .main_box{
+    background-color: white;
     width: 25vw;
     height: 65vh;
     border: 0.25px solid white;
@@ -38,6 +39,7 @@ html{
     flex-direction: column;
     justify-content: center;
     z-index: 1;
+    opacity: 100%;
    
 }
 
