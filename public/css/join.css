@@ -3,8 +3,17 @@ html {
   margin: 0;
   padding: 0;
   background-color: black;
+  background-image: url(../image/join.png);
   
 }
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
 
 .Center {
   display: flex;
@@ -19,9 +28,11 @@ html {
   flex-direction: column;
   justify-content: center;
   margin-bottom: 15vh;
-  border: 0.25px solid white;
+ 
   border-radius: 5px;
   margin-top: 180px;
+  background-color: black;
+  opacity: 80%;
 }
 
 .inputtt {

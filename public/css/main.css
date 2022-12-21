@@ -1,24 +1,31 @@
 body,
 html{
-    padding:0;
-    margin:0;
-    background-color: black;
+        padding:0;
+        margin:0;
+        background-color: black;
+        background-image: url(../image/join.png);
+        background-size:cover;
+   
    
 }
 
-
-
-.aaa{
-    color:white;
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
 }
 
-.A{
-    width: 100%;
-}
+
+
+
+
 
 .B{
     display: flex;
     justify-content: flex-end;
+    
+    
 }
 
 .main{
@@ -28,18 +35,20 @@ html{
 }
 
 .main_box{
-    background-color: white;
+    background-color: black;
+    opacity: 87%;
+    
     width: 25vw;
     height: 65vh;
-    border: 0.25px solid white;
-    border-radius: 5px;
+ 
+    border-radius: 7px;
     margin-top:16vh;
     margin-right:5vw;
     display: flex;
     flex-direction: column;
     justify-content: center;
     z-index: 1;
-    opacity: 100%;
+    
    
 }
 
@@ -51,6 +60,7 @@ html{
     position: relative;
     bottom:30px;
 }
+
 .box_items{
     margin-bottom:30px;
 }
@@ -60,7 +70,7 @@ html{
     width: 80%;
     display: flex;
     height: 4.5vh;
-    font-family:'SDGothic',serif;
+    font-family:'Pretendard';
     font-weight: bolder;
     outline: red;    
     font-size: 19px;
@@ -113,11 +123,11 @@ html{
     height: 8vh;
     width: 8vw;
     border: 1px solid black;
-    border-radius: 40px;
+    border-radius: 10px;
     font-weight: bold;
     font-size:1.2rem;
     color:black;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+  
 
     transition: all 0.2s linear;
     
@@ -128,8 +138,9 @@ html{
 }
 
 .Home_logo{
-
-
+     width: 5vw;
+    height: 9vh;
+    padding: 35px 0 0 30px;
     transition: all 0.2s linear;
 }
 
@@ -139,15 +150,17 @@ html{
 
 .login_button{
    margin-right:4vw;
-   background-color: paleturquoise;
+   background-color: red;
+   
+   
   
 }
 
 .logo{
-    width: 8vw;
+    width: 12vw;
     
-    margin-bottom:6vh;
-    height: 16vh;
+    margin-bottom:4vh;
+    height: 18vh;
   
 }
 .logo_div{
@@ -170,9 +183,6 @@ html{
 }
 
 
-.Home_logo{
-    width: 5vw;
-    height: 9vh;
-    padding: 15px 0 0 20px;
-}
+
+   
 
