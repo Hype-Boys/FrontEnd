@@ -3,6 +3,7 @@ html {
   margin: 0;
   padding: 0;
   background-color: black;
+  
 }
 
 .Center {
@@ -36,7 +37,7 @@ html {
 
 .ALL {
   height: 5vh;
-  font-size: 15 px;
+  font-size: 16px;
   text-indent: 10px;
   font-family: inherit;
   font-weight: bolder;

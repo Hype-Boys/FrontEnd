@@ -37,6 +37,7 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    z-index: 1;
    
 }
 
@@ -44,7 +45,9 @@ html{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top:4vh;
+    margin-top:3vh;
+    position: relative;
+    bottom:30px;
 }
 .box_items{
     margin-bottom:30px;
@@ -62,6 +65,16 @@ html{
     text-indent: 8px;
     border: 1px solid black;
     border-radius: 4px;
+     transition: all 0.2s linear;
+
+}
+
+
+.PASSWORD:hover{
+    transform: scale(1.02);
+}
+.ID:hover{
+    transform: scale(1.02);
 }
 
 .ID::placeholder{
@@ -113,6 +126,8 @@ html{
 }
 
 .Home_logo{
+
+
     transition: all 0.2s linear;
 }
 
@@ -127,10 +142,10 @@ html{
 }
 
 .logo{
-    width: 9vw;
-    margin-bottom:0;
-    margin-bottom:2vh;
-    height: 18vh;
+    width: 8vw;
+    
+    margin-bottom:6vh;
+    height: 16vh;
   
 }
 .logo_div{
@@ -154,8 +169,8 @@ html{
 
 
 .Home_logo{
-    width: 80px;
-    height: 80px;
+    width: 5vw;
+    height: 9vh;
     padding: 15px 0 0 20px;
 }
 
