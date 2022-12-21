@@ -4,6 +4,8 @@ html {
   padding: 0;
   background-color: black;
   background-image: url(../image/join.png);
+  background-size:cover; /*배경 부셔지지 않도록 고정시킴.*/
+  
   
 }
 
@@ -13,12 +15,29 @@ html {
     font-weight: 400;
     font-style: normal;
 }
+.line{
+  position: relative;
+  bottom:20px;
+}
+
+.center_font{
+  width: 180px;
+  height: 145px;
+  position: relative;
+  bottom:20px;
+}
+
+.font_img{
+  display: flex;
+  justify-content: center;
+}
 
 
 .Center {
   display: flex;
   justify-content: center;
   height: 100vh;
+  width: 100%;
 }
 
 .inputs {
@@ -39,11 +58,11 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+ 
 }
 
 .PW_login {
-  margin: 7vh 0 7vh 0;
+  margin: 5vh 0 5vh 0;
 }
 
 .ALL {
@@ -55,6 +74,11 @@ html {
   width: 600px;
   border-radius: 8px;
   border-color: red;
+  transition: 0.2s all linear;
+}
+
+.ALL:hover{
+  transform: scale(1.01);
 }
 
 .ALL::placeholder {
@@ -92,3 +116,31 @@ html {
   margin-top: 5px;
   font-size: 14px;
 }
+
+.login_button_div{
+  display: flex;
+  justify-content: center;
+}
+
+.login_button{
+  width: 610px;
+  height: 7vh;
+  border-radius: 7px;
+  background-color: red;
+  color:white;
+  font-family: 'Pretendard';
+  font-size: 23px;
+  font-weight: bold;
+  position: relative;
+  top:25px;
+
+  transition: 0.2s all linear;
+  
+} 
+
+.login_button:hover{
+  transform: scale(1.02);
+  color: black
+}
+
+
