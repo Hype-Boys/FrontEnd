@@ -1,9 +1,6 @@
-const HomeLogo = document.querySelector(".Home_logo");
 const joinbutton = document.querySelector(".join_form");
+const HomeLogo = document.querySelector(".Home_logo");
 
-function join() {
-  window.location = "../../public/html/join.html";
-}
 
 HomeLogo.addEventListener("click", (event) => {
   event.preventDefault();
@@ -11,6 +8,9 @@ HomeLogo.addEventListener("click", (event) => {
 })
 
 
+function join() {
+window.location = "../../public/html/join.html";
+}
 
 
 joinbutton.addEventListener("click", (event) => {
