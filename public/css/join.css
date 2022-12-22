@@ -32,7 +32,8 @@ html {
   width: 380px;
   height: 155px;
   position: relative;
-  right: 760px;
+  right: 780px;
+  opacity: 85%;
 }
 
 .Main {
@@ -173,7 +174,7 @@ html {
 .Home_logo {
   width: 4vw;
   height: 8vh;
-  padding: 35px 0 0 30px;
+  margin: 35px 0 0 30px;
   transition: all 0.2s linear;
   cursor: pointer;
   position: relative;

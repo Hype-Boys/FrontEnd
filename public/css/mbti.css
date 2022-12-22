@@ -23,7 +23,6 @@ html {
   font-style: normal;
 }
 
-
 .input_mbti,
 .check {
   width: 500px;
@@ -32,6 +31,11 @@ html {
   text-indent: 155px;
   font-size: 69px;
   font-family: "OKDDUNG";
+}
+
+.input_mbti:focus {
+  color: transparent;
+  text-shadow: 0 0 0 black;
 }
 
 .input_mbti,
@@ -52,11 +56,11 @@ html {
 }
 
 .main {
-    position: relative;
-    bottom:50px;
- height: 100vh;
+  position: relative;
+
+  height: 88vh;
   display: flex;
- align-items: center;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
 }
@@ -92,21 +96,30 @@ html {
   font-style: normal;
 }
 
-.Home_logo{
-    width: 4vw;
+.Home_logo {
+  width: 4vw;
   height: 8vh;
-  padding: 35px 0 0 30px;
+  margin: 35px 0 0 30px;
   transition: all 0.2s linear;
   cursor: pointer;
   position: relative;
- 
+
   transition: 0.2s all linear;
 }
 
-.img_div{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-  
-  
+.Home_logo:hover {
+  transform: scale(1.08);
+}
+
+.img_div {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.move_center {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 50px;
 }
