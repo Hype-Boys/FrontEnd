@@ -23,10 +23,6 @@ html {
   font-style: normal;
 }
 
-.center {
-  display: flex;
-  justify-content: center;
-}
 
 .input_mbti,
 .check {
@@ -38,13 +34,11 @@ html {
   font-family: "OKDDUNG";
 }
 
-
 .input_mbti,
-.check_MBTI{
-     transition: 0.2s all linear;
-    opacity: 80%;
+.check_MBTI {
+  transition: 0.2s all linear;
+  opacity: 80%;
 }
-
 
 .input_mbti::placeholder {
   position: relative;
@@ -58,10 +52,13 @@ html {
 }
 
 .main {
-  height: 100vh;
+    position: relative;
+    bottom:50px;
+ height: 100vh;
   display: flex;
-  justify-content: center;
+ align-items: center;
   flex-direction: column;
+  justify-content: center;
 }
 
 .check_MBTI {
@@ -73,22 +70,19 @@ html {
   color: white;
   font-size: 23px;
   font-family: "Pretendard";
- 
+
   font-weight: bolder;
 }
 
-
-.check_MBTI:hover{
-   transform: scale(1.02);
-   color:black
+.check_MBTI:hover {
+  transform: scale(1.02);
+  color: black;
 }
 
-.input_mbti:hover{
-   transform: scale(1.02);
-   color:black
+.input_mbti:hover {
+  transform: scale(1.02);
+  color: black;
 }
-
-
 
 @font-face {
   font-family: "Pretendard";
@@ -98,4 +92,21 @@ html {
   font-style: normal;
 }
 
+.Home_logo{
+    width: 4vw;
+  height: 8vh;
+  padding: 35px 0 0 30px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  position: relative;
+ 
+  transition: 0.2s all linear;
+}
 
+.img_div{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  
+  
+}

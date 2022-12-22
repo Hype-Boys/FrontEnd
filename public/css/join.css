@@ -18,20 +18,21 @@ html {
   font-weight: 400;
   font-style: normal;
 }
-.line { 
+.line {
   position: relative;
   bottom: 20px;
 }
-.font_div{
+.font_img_div {
   display: flex;
   align-items: center;
-  justify-content:flex-end;
+  justify-content: space-between;
 }
 
 .center_font {
   width: 380px;
   height: 155px;
   position: relative;
+  right: 760px;
 }
 
 .Main {
@@ -68,8 +69,6 @@ html {
   position: relative;
   top: 50px;
   width: 100vw;
-  
-
 }
 
 .inputs {
@@ -134,6 +133,10 @@ html {
   margin-left: 50px;
   border-radius: 10px;
 }
+
+.personal {
+  color: white;
+}
 .PW_error {
   color: red;
 }
@@ -167,10 +170,17 @@ html {
   color: black;
 }
 
-.Home_logo{
-     width: 4vw;
-    height: 8vh;
-    padding: 35px 0 0 30px;
-    transition: all 0.2s linear;
-    cursor: pointer;
+.Home_logo {
+  width: 4vw;
+  height: 8vh;
+  padding: 35px 0 0 30px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  position: relative;
+  bottom: 105px;
+  transition: 0.2s all linear;
+}
+
+.Home_logo:hover {
+  transform: scale(1.08);
 }
