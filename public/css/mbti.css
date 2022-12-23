@@ -23,6 +23,11 @@ html {
   font-style: normal;
 }
 
+.check11{
+  display: flex;
+  flex-direction: column;
+}
+
 .input_mbti,
 .check {
   width: 500px;
