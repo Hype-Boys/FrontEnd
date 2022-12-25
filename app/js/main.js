@@ -5,7 +5,6 @@ const id = document.querySelector(".ID");
 
 const form_id = document.querySelector(".form_id");
 
-
 const regexr = /^[a-z0-9]{4,10}$/;
 
 HomeLogo.addEventListener("click", (event) => {
@@ -27,10 +26,7 @@ joinbutton.addEventListener("click", (event) => {
   window.location = "../../public/html/join.html";
 });
 
-
-
 form_id.addEventListener("submit", form_Id);
-
 
 function form_Id(event) {
   event.preventDefault();
@@ -42,14 +38,3 @@ function form_Id(event) {
     return false;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
