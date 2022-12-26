@@ -6,12 +6,12 @@ html {
 }
 
 @font-face {
-    font-family: 'Pretendard';
-    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
-
 
 @font-face {
   font-family: "KOTRAHOPE";
@@ -33,13 +33,12 @@ html {
   background-color: #292828;
   display: flex;
   position: relative;
-  bottom:25px;
-  
+  bottom: 25px;
 }
 
-.move{
-    display: flex;
-    margin-left: 1vw;;
+.move {
+  display: flex;
+  margin-left: 1vw;
 }
 
 .logo {
@@ -59,190 +58,156 @@ html {
   display: flex;
   align-items: center;
   margin-left: 4vw;
-  
 }
 
-.font{
-    font-size: 1.1vw;
-    font-weight: bold;
-    color:white;
-    cursor: pointer;
-    transition: 0.2s all linear;
+.font {
+  font-size: 1.1vw;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s all linear;
 }
 
-.font:hover{
-    transform: scale(1.05);
+.font:hover {
+  transform: scale(1.05);
 }
 
-
-
-.daywebton{
-    margin: 0 3vw 0 3vw;
+.daywebton {
+  margin: 0 3vw 0 3vw;
 }
 
-.view_img{
-    position: relative;
-    top:100px;
-    left:200px;
+.view_img {
+  position: relative;
+  top: 100px;
+  left: 200px;
 }
 
-
-.img_div{
-    height: 86vh;
-    width: 50vw;;
+.img_div {
+  height: 86vh;
+  width: 50vw;
 }
 
-.All_main{
-    display: flex;
+.All_main {
+  display: flex;
 }
 
-
-.img_div{
-  
-   
-    align-items: center;
-    position: relative;
-    right:4vw;
+.img_div {
+  align-items: center;
+  position: relative;
+  right: 4vw;
 }
 
-.write_div{
-    width: 50vw;
+.write_div {
+  width: 50vw;
 }
-.img{
-    position: relative;
-    top:20px;
-}
-
-.MBTI{
-    display: flex;
-    justify-content: end;
-    margin-top:10vh;
-    
-    
+.img {
+  position: relative;
+  top: 20px;
 }
 
-.show_mbti{
-    position: relative;
-    right:8vw;
-    font-size: 40px;
-  
-
+.MBTI {
+  display: flex;
+  justify-content: end;
+  margin-top: 10vh;
 }
 
-.A{
-   font-family: "KOTRAHOPE";
-   font-weight: bolder;
-   font-size: 45px;
+.show_mbti {
+  position: relative;
+  right: 8vw;
+  font-size: 40px;
 }
 
-.B{
-     font-family: "OKDDUNG";
-     position: relative;
-     bottom:3px;
-     
+.A {
+  font-family: "KOTRAHOPE";
+  font-weight: bolder;
+  font-size: 45px;
 }
 
-.name{
-    margin-top:60px;
+.B {
+  font-family: "OKDDUNG";
+  position: relative;
+  bottom: 3px;
 }
 
-.webtoon_name{
-   font-family: 'Pretendard';
-   font-size: 40px;
-   font-weight: bolder;
+.name {
+  margin-top: 60px;
 }
 
-.content_div{
-    margin-top:8vh;
+.webtoon_name {
+  font-family: "Pretendard";
+  font-size: 40px;
+  font-weight: bolder;
 }
 
-.one{
-     font-family: 'Pretendard';
-     font-weight: bold;
-     font-size:33px;
+.content_div {
+  margin-top: 8vh;
 }
 
-.one1{
-    color:red
+.one {
+  font-family: "Pretendard";
+  font-weight: bold;
+  font-size: 33px;
 }
 
-.next_webtoon{
-    width: 28vw;
-    height: 6vh;
-    background-color: red;
-    opacity: 80%;
-    border-radius: 6px;
-    color:white;
-     font-family: 'Pretendard';
-     font-size: 23px;
-     transition: 0.2s all linear;
-     cursor: pointer;
+.one1 {
+  color: red;
 }
 
-.next_webtoon:hover{
-    transform: scale(1.02);
-    color: black;
+.next_webtoon {
+  width: 28vw;
+  height: 6vh;
+  background-color: red;
+  opacity: 80%;
+  border-radius: 6px;
+  color: white;
+  font-family: "Pretendard";
+  font-size: 23px;
+  transition: 0.2s all linear;
+  cursor: pointer;
 }
 
-.button_div{
-    display: flex;
-    justify-content: center;
-    margin-top:170px;
-    position: relative;
-    right:100px;
-    
+.next_webtoon:hover {
+  transform: scale(1.02);
+  color: black;
 }
 
-.home_div{
-    transition: 0.2s all linear;
-     font-family: 'Pretendard';
-     font-weight: bold;
-    margin-top:180px;
-    display: flex;
-    justify-content: end;
-    position: relative;
-    right:50px;
-   
-    
+.button_div {
+  display: flex;
+  justify-content: center;
+  margin-top: 170px;
+  position: relative;
+  right: 100px;
 }
 
-.Home_main{
-    font-size: 27px;
-    text-decoration: underline;
-    cursor: pointer;
-    transition: 0.2s all linear;
-    opacity: 90%;
+.home_div {
+  transition: 0.2s all linear;
+  font-family: "Pretendard";
+  font-weight: bold;
+  margin-top: 180px;
+  display: flex;
+  justify-content: end;
+  position: relative;
+  right: 50px;
 }
 
-.Home_main:hover{
-    transform: scale(1.02);
-    opacity: 100%;
+.Home_main {
+  font-size: 27px;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: 0.2s all linear;
+  opacity: 90%;
 }
 
-.W{
-    color: white;
+.Home_main:hover {
+  transform: scale(1.02);
+  opacity: 100%;
 }
 
-.move1{
-   position: relative;
-   top:40px;
+.W {
+  color: white;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.move1 {
+  position: relative;
+  top: 40px;
+}

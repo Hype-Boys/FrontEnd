@@ -7,24 +7,25 @@ let a = document.getElementById("input_id");
 
 const MBTI_KEY = "mbti";
 
-const MBTI = [
-  "ISTJ",
-  "ISFJ",
-  "INFJ",
-  "INTJ",
-  "ISTP",
-  "ISFP",
-  "INFP",
-  "INTP",
-  "ESTP",
-  "ESFP",
-  "ENFP",
-  "ENTP",
-  "ESTJ",
-  "ESFJ",
-  "ENFJ",
-  "ENTJ",
-];
+
+
+const MBTI = {
+  ISTJ: "ISTJ",
+  ISFJ: "ISFJ",
+  INFJ: "INFJ",
+  INTJ: "INTJ",
+  ISTP: "ISTP",
+  ISFP: "ISFP",
+  INFP: "INFP",
+  ESTP: "ESTP",
+  ESFP: "ESFP",
+  ENFP: "ENFP",
+  ENTP: "ENTP",
+  ESTJ: "ESTJ",
+  ESFJ: "ESFJ",
+  ENFJ: "ENFJ",
+  ENTJ: "ENTJ",
+}
 
 HomeLogo.addEventListener("click", (event) => {
   event.preventDefault();
@@ -39,20 +40,22 @@ showWebtoon.addEventListener("submit", (event) => {
   const mbtivalue = inputmbti.value;
   localStorage.setItem(MBTI_KEY, mbtivalue);
 
-  if (!eng.test(mbtivalue)) {
-    alert("4자/영어 또는 대문자로 입력해주세요");
-    return;
+  
+  
+  
+    if (!eng.test(mbtivalue)) {
+      alert("4자/영어 또는 대문자로 입력해주세요");
+      return;
   }
   
-  for (let j = 0; j < 1; j++) {
-    for (let i = 0; i < 16; i++) {
-      if (String(mbtivalue) === MBTI[i]) {
-        window.location = "../../public/html/recommand.html";
-        break;
-      }
-    }
+  console.log(MBTI[mbtivalue]);
+
+  if (MBTI[mbtivalue] != undefined) {
+    window.location = "../../public/html/recommand.html";
+  } else {
+    alert("다시 ㅍ입력");
   }
+  
 
 
- 
 });

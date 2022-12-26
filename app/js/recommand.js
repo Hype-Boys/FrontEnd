@@ -11,14 +11,11 @@ const ISTJ = [
   {
     img: "../../public/webtoon/1.jpg",
     name: "참교육",
-    write: ""
+    write: "",
   },
 ];
 
-const ISFJ = [
-
-
-];
+const ISFJ = [];
 
 const INFJ = [];
 
@@ -47,6 +44,3 @@ const ESFJ = [];
 const ENFJ = [];
 
 const ENTJ = [];
-
-
-
