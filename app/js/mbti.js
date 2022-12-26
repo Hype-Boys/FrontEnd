@@ -11,9 +11,7 @@ HomeLogo.addEventListener("click", (event) => {
 });
 
 showWebtoon.addEventListener("submit", (event) => {
-  if (localStorage.getItem(MBTI_KEY) === null) {
-    localStorage.removeItem(MBTI_KEY);
-  }
+
   event.preventDefault();
   const mbtivalue = inputmbti.value;
   localStorage.setItem(MBTI_KEY, mbtivalue);
