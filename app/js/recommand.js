@@ -6,3 +6,7 @@ const changeMBTI = document.querySelector(".B");
 const localmbti = localStorage.getItem("mbti");
 
 changeMBTI.innerText = `ㅤ${localmbti}`;
+
+
+
+
