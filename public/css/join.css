@@ -1,0 +1,187 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-image: url(../image/join.png);
+  background-size: cover; /*배경 부셔지지 않도록 고정시킴.*/
+}
+
+.hidden {
+  display: none;
+}
+
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.line {
+  position: relative;
+  bottom: 20px;
+}
+.font_img_div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.center_font {
+  width: 380px;
+  height: 155px;
+  position: relative;
+  right: 780px;
+  opacity: 85%;
+}
+
+.Main {
+  display: flex;
+  flex-direction: column;
+}
+
+.font_img {
+  display: flex;
+  justify-content: center;
+}
+.a {
+  display: flex;
+  flex-direction: column;
+}
+
+.main_center1 {
+  display: flex;
+  justify-content: center;
+  height: 120vh;
+}
+
+.Center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+
+.font_img_div {
+  position: relative;
+  top: 50px;
+  width: 100vw;
+}
+
+.inputs {
+  width: 700px;
+  height: 62vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 15vh;
+  position: relative;
+  top: 90px;
+  border-radius: 5px;
+
+  background-color: black;
+  opacity: 80%;
+}
+
+.inputtt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.PW_login {
+  margin: 5vh 0 5vh 0;
+}
+
+.ALL {
+  height: 5vh;
+  font-size: 16px;
+  text-indent: 10px;
+  font-family: inherit;
+  font-weight: bolder;
+  width: 600px;
+  border-radius: 8px;
+  border-color: red;
+  transition: 0.2s all linear;
+}
+
+.ALL:hover {
+  transform: scale(1.01);
+}
+
+.ALL::placeholder {
+  font-size: 13px;
+}
+
+.check_box {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  right: 4px;
+  margin-top: 15px;
+  cursor: it;
+  color: white;
+}
+
+.box_Personal {
+  position: relative;
+  bottom: 25px;
+  margin-top: 25px;
+  margin-left: 50px;
+  border-radius: 10px;
+}
+
+.personal {
+  color: white;
+}
+.PW_error {
+  color: red;
+}
+.error {
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.login_button_div {
+  display: flex;
+  justify-content: center;
+}
+
+.login_button {
+  width: 610px;
+  height: 7vh;
+  border-radius: 7px;
+  background-color: red;
+  color: white;
+  font-family: "Pretendard";
+  font-size: 23px;
+  font-weight: bold;
+  position: relative;
+  top: 55px;
+  cursor: pointer;
+  transition: 0.2s all linear;
+}
+
+.login_button:hover {
+  transform: scale(1.02);
+  color: black;
+}
+
+.Home_logo {
+  width: 4vw;
+  height: 8vh;
+  margin: 35px 0 0 30px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  position: relative;
+  bottom: 105px;
+  transition: 0.2s all linear;
+}
+
+.Home_logo:hover {
+  transform: scale(1.08);
+}

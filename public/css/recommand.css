@@ -1,0 +1,246 @@
+body,
+html {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+@font-face {
+  font-family: "KOTRAHOPE";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2110@1.0/KOTRAHOPE.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OKDDUNG";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/OKDDUNG.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.choose_center {
+  height: 9vh;
+  background-color: #292828;
+  display: flex;
+  
+}
+
+.move{
+    display: flex;
+    margin-left: 1vw;;
+}
+
+.logo {
+  width: 7vw;
+  height: 5vh;
+  margin: 2.5vh 0 0 1vw;
+  cursor: pointer;
+  transition: 0.2s all linear;
+}
+
+.logo:hover {
+  transform: scale(1.05);
+}
+
+.check_font {
+  width: 80vw;
+  display: flex;
+  align-items: center;
+  margin-left: 4vw;
+  
+}
+
+.font{
+    font-size: 1.1vw;
+    font-weight: bold;
+    color:white;
+    cursor: pointer;
+    transition: 0.2s all linear;
+}
+
+.font:hover{
+    transform: scale(1.05);
+}
+
+
+
+.daywebton{
+    margin: 0 3vw 0 3vw;
+}
+
+.view_img{
+    position: relative;
+    top:100px;
+    left:200px;
+}
+
+
+.img_div{
+    height: 86vh;
+    width: 50vw;;
+}
+
+.All_main{
+    display: flex;
+}
+
+
+.img_div{
+  
+   
+    align-items: center;
+    position: relative;
+    right:4vw;
+}
+
+.write_div{
+    width: 50vw;
+}
+.img{
+    position: relative;
+    top:20px;
+}
+
+.MBTI{
+    display: flex;
+    justify-content: end;
+    margin-top:10vh;
+    
+    
+}
+
+.show_mbti{
+    position: relative;
+    right:8vw;
+    font-size: 40px;
+  
+
+}
+
+.A{
+   font-family: "KOTRAHOPE";
+   font-weight: bolder;
+   font-size: 45px;
+}
+
+.B{
+     font-family: "OKDDUNG";
+     position: relative;
+     bottom:3px;
+     
+}
+
+.name{
+    margin-top:60px;
+}
+
+.webtoon_name{
+   font-family: 'Pretendard';
+   font-size: 40px;
+   font-weight: bolder;
+}
+
+.content_div{
+    margin-top:8vh;
+}
+
+.one{
+     font-family: 'Pretendard';
+     font-weight: bold;
+     font-size:33px;
+}
+
+.one1{
+    color:red
+}
+
+.next_webtoon{
+    width: 28vw;
+    height: 6vh;
+    background-color: red;
+    opacity: 80%;
+    border-radius: 6px;
+    color:white;
+     font-family: 'Pretendard';
+     font-size: 23px;
+     transition: 0.2s all linear;
+     cursor: pointer;
+}
+
+.next_webtoon:hover{
+    transform: scale(1.02);
+    color: black;
+}
+
+.button_div{
+    display: flex;
+    justify-content: center;
+    margin-top:170px;
+    position: relative;
+    right:100px;
+    
+}
+
+.home_div{
+    transition: 0.2s all linear;
+     font-family: 'Pretendard';
+     font-weight: bold;
+    margin-top:180px;
+    display: flex;
+    justify-content: end;
+    position: relative;
+    right:50px;
+   
+    
+}
+
+.Home_main{
+    font-size: 27px;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 0.2s all linear;
+    opacity: 90%;
+}
+
+.Home_main:hover{
+    transform: scale(1.02);
+    opacity: 100%;
+}
+
+.W{
+    color: white;
+}
+
+.move1{
+   position: relative;
+   top:40px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

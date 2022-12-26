@@ -1,2 +1,194 @@
-@import url(./media.css);
-@import url(./style.css);
+body,
+html{
+        padding:0;
+        margin:0;
+        background-color: black;
+        background-image: url(../image/join.png);
+        background-size:cover;
+   
+   
+}
+
+.hidden{
+    display: none;
+}
+
+@font-face {
+    font-family: 'Pretendard';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+
+.B{
+    display: flex;
+    justify-content: flex-end;
+    
+    
+}
+
+.main{
+    display: flex;
+    justify-content: flex-end;
+ 
+}
+
+.main_box{
+    background-color: black;
+    opacity: 87%;
+    
+    width: 25vw;
+    height: 65vh;
+ 
+    border-radius: 7px;
+    margin-top:14vh;
+    margin-right:5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 1;
+    
+   
+}
+
+.login_id_password{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top:3vh;
+    position: relative;
+    bottom:10px;
+}
+
+.box_items{
+    margin-bottom:30px;
+}
+
+.ID,
+.PASSWORD{
+    width: 80%;
+    display: flex;
+    height: 4.5vh;
+    font-family:'Pretendard';
+    font-weight: bolder;
+    outline: red;    
+    font-size: 19px;
+    text-indent: 8px;
+    border: 1px solid black;
+    border-radius: 4px;
+     transition: all 0.2s linear;
+
+}
+
+
+.PASSWORD:hover{
+    transform: scale(1.01);
+}
+.ID:hover{
+    transform: scale(1.01);
+}
+
+.ID::placeholder{
+    font-size: 1.1rem;
+   
+}
+
+.PASSWORD::placeholder{
+    font-size: 1.1rem;
+   
+}
+
+.PASSWORD{
+    margin-top:4.5vh;
+}
+
+.buttons{
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    position: relative;
+    top:7vh;
+   
+   
+
+}
+
+.BT{
+    cursor: pointer;
+}
+
+.login_button,
+.join_button{
+    height: 8vh;
+    width: 8vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size:1.2rem;
+    color:black;
+  
+
+    transition: all 0.2s linear;
+    
+}
+
+.BT:hover{
+    transform: scale(1.08);
+}
+
+.Home_logo{
+     width: 4vw;
+    height: 8vh;
+    margin: 35px 0 0 30px;
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.Home_logo:hover{
+    transform: scale(1.08);
+}
+
+.login_button{
+   margin-right:4vw;
+   background-color: red;
+   
+   
+  
+}
+
+.logo{
+    width: 15vw;
+    
+  position: relative;
+  bottom:20px;
+    height: 14vh;
+  
+}
+
+
+.logo_div{
+    display: flex;
+    justify-content: center;
+}
+
+.id_error,
+.pw_error{
+    color:red
+    
+}
+
+.id_error_div,
+.pw_error_div{
+   width: 100%;
+   position: relative;
+   left:2.5vw;
+   margin-top:0.5vh;
+}
+
+
+
+   
+
