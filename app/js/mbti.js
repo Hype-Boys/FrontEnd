@@ -31,6 +31,7 @@ HomeLogo.addEventListener("click", (event) => {
   window.location = "../../public/html/main.html";
 });
 
+
 showWebtoon.addEventListener("submit", (event) => {
   event.preventDefault();
   const eng = /^[A-Z]{4}/g;
@@ -39,16 +40,19 @@ showWebtoon.addEventListener("submit", (event) => {
   localStorage.setItem(MBTI_KEY, mbtivalue);
 
   if (!eng.test(mbtivalue)) {
-    alert("error1");
+    alert("4자/영어 또는 대문자로 입력해주세요");
     return;
   }
-
-  for (let i = 0; i < 16; i++) {
-    if (String(mbtivalue) === MBTI[i]) {
-      window.location = "../../public/html/recommand.html";
-    } else {
-      alert("error2");
-      break;
+  
+  for (let j = 0; j < 1; j++) {
+    for (let i = 0; i < 16; i++) {
+      if (String(mbtivalue) === MBTI[i]) {
+        window.location = "../../public/html/recommand.html";
+        break;
+      }
     }
   }
+
+
+ 
 });

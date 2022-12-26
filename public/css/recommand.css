@@ -32,6 +32,8 @@ html {
   height: 9vh;
   background-color: #292828;
   display: flex;
+  position: relative;
+  bottom:25px;
   
 }
 
