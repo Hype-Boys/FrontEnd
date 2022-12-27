@@ -25,6 +25,7 @@ const MBTI = {
   ESFJ: "ESFJ",
   ENFJ: "ENFJ",
   ENTJ: "ENTJ",
+  SEXY: "SEXY",
 }
 
 HomeLogo.addEventListener("click", (event) => {
