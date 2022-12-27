@@ -7,18 +7,17 @@ const localmbti = localStorage.getItem("mbti");
 
 changeMBTI.innerText = `ㅤ${localmbti}`;
 
-const Random_MBTI = MBTI1[Math.floor(Math.random() * images.length)];
-const Random_MBTI2 = MBTI2[Math.floor(Math.random() * images.length)];
-const Random_MBTI3 = MBTI3[Math.floor(Math.random() * images.length)];
-const Random_MBTI4 = MBTI4[Math.floor(Math.random() * images.length)];
-
 const bgImage = document.createElement("img");
 
+const logo2 = document.querySelector(".logo");
+
+logo2.addEventListener("click", (event) => {
+  event.preventDefault();
+  window.location = "../../public/html/main.html";
+});
 
 
-
-
-const MBTI1 = [
+const MBTI = [
   //INFP, ENFP, ESFP, ENFJ
 
   {
@@ -442,3 +441,54 @@ const MBTI4 = [
     name: "",
   },
 ];
+
+const Random_MBTI1 = MBTI[Math.floor(Math.random() * MBTI.length)];
+const Random_MBTI2 = MBTI2[Math.floor(Math.random() * MBTI2.length)];
+const Random_MBTI3 = MBTI3[Math.floor(Math.random() * MBTI3.length)];
+const Random_MBTI4 = MBTI4[Math.floor(Math.random() * MBTI4.length)];
+
+const MBTI_Check1 = {
+  INFP: "INFP",
+  ENFP: "ENFP",
+  ESFP: "ESFP",
+  ENFJ: "ENFJ",
+}
+const MBTI_Check2 = {
+   INTP: "INTP",
+   INTJ: "INTJ",
+   ISFP: "ISFP",
+   ENTP: "ENTP",
+}
+const MBTI_Check3 = {
+  INFJ: "INFJ",
+  ISFJ: "ISFJ",
+  ISTJ: "ISTJ",
+  ESFJ: "ESFJ",
+
+}
+const MBTI_Check4 = {
+  ISTP: "ISTP",
+  ESTP: "ESTP",
+  ESTJ: "ESTJ",
+  ENTJ: "ENTJ",
+}
+
+const img11 = document.querySelector(".imgg");
+const mbtivalue1 = localStorage.getItem("mbti");
+console.log(mbtivalue1);
+  
+  
+  
+if (MBTI_Check1[mbtivalue1] != undefined) {
+  img11.src = Random_MBTI1.img;
+}
+else if(MBTI_Check2[mbtivalue1] != undefined) {
+   img11.src = Random_MBTI2.img;
+}
+else if(MBTI_Check3[mbtivalue1] != undefined) {
+   img11.src = Random_MBTI3.img;
+}
+else if(MBTI_Check4[mbtivalue1] != undefined) {
+   img11.src = Random_MBTI4.img;
+}
+

@@ -25,6 +25,7 @@ const MBTI = {
   ESFJ: "ESFJ",
   ENFJ: "ENFJ",
   ENTJ: "ENTJ",
+  INTP: "INTP",
   SEXY: "SEXY",
 }
 
@@ -41,9 +42,6 @@ showWebtoon.addEventListener("submit", (event) => {
   const mbtivalue = inputmbti.value;
   localStorage.setItem(MBTI_KEY, mbtivalue);
 
-  
-  
-  
     if (!eng.test(mbtivalue)) {
       alert("4자/영어 또는 대문자로 입력해주세요");
       return;
@@ -54,7 +52,7 @@ showWebtoon.addEventListener("submit", (event) => {
   if (MBTI[mbtivalue] != undefined) {
     window.location = "../../public/html/recommand.html";
   } else {
-    alert("다시 ㅍ입력");
+    alert("다시 입력하세요");
   }
   
 
