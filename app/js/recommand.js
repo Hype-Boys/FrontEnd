@@ -12,35 +12,27 @@ const ISTJ = [
     img: "../../public/webtoon/1.jpg",
     name: "참교육",
     write: "",
+    site: "https://comic.naver.com/webtoon/list?titleId=758037"
+    
   },
 ];
 
-const ISFJ = [];
+const MBTI1 = {
+  //INFP, ENFP, ESFP, ENFJ
 
-const INFJ = [];
+};
 
-const INTJ = [];
+const MBTI2 = {
+  //INTP, INTJ, ISFP, ENTP
 
-const ISTP = [];
+};
 
-const ISFP = [];
+const MBTI3 = {
+  //INFJ, ISFJ, ISTJ, ESFJ
 
-const INFP = [];
+};
 
-const INTP = [];
+const MBTI4 = {
+  //ISTP, ENTJ, ESTJ, ESTP
 
-const ESTP = [];
-
-const ESFP = [];
-
-const ENFP = [];
-
-const ENTP = [];
-
-const ESTJ = [];
-
-const ESFJ = [];
-
-const ENFJ = [];
-
-const ENTJ = [];
+};
