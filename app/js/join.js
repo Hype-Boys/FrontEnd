@@ -7,7 +7,7 @@ newlogin.addEventListener("submit", (event) => {
 
 const HomeLogo = document.querySelector(".Home_logo");
 
-HomeLogo.addEventListener("click", () => {
+HomeLogo.addEventListener("click", (e) => {
   window.location = "../../public/html/index.html";
 });
 

@@ -7,6 +7,14 @@ html {
   background-size: cover; /*배경 부셔지지 않도록 고정시킴.*/
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
 .hidden {
   display: none;
 }
@@ -218,7 +226,7 @@ html {
 
 .checkemail{
   position: relative;
-  height: 3vh;  
+  height: 4vh;  
   width: 20vw;
   font-size:20px;
   border-color: red;
@@ -233,7 +241,8 @@ html {
 
 
 .certification{
-  height: 3.6vh;
+  width: 70vh;
+  height: 5vh;
   border-radius: 5px;
   color:blue;
   font-weight: bolder;

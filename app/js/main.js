@@ -20,7 +20,7 @@ const pattern2 = /^[A-Za-z0-9]{8,15}$/;
 
 HomeLogo.addEventListener("click", (event) => {
   event.preventDefault();
-  window.location = "../../public/html/main.html";
+  window.location = "../../public/html/index.html";
 })
 
 loginbutton.addEventListener("submit", (event) => {
