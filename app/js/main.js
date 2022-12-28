@@ -47,7 +47,7 @@ const onChange = (e) => {
 
 //비밀번호 확인
 const onChange2 = (t) => {
-  console.log(pattern2.test(t.target.value));
+ 
   if (pattern2.test(t.target.value)) {
     pw_error.classList.add("hidden");
   } else {  

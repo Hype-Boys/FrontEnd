@@ -3,6 +3,7 @@ html {
   padding: 0;
   margin: 0;
   background-color: black;
+  opacity: 95%;
 }
 
 @font-face {
@@ -131,6 +132,9 @@ html {
 
 .name {
   margin-top: 60px;
+  position: relative;
+  right:20px;
+
 }
 
 .webtoon_name {
@@ -176,14 +180,14 @@ html {
   justify-content: center;
   margin-top: 170px;
   position: relative;
-  right: 100px;
+  right: 250px;
 }
 
 .home_div {
   transition: 0.2s all linear;
   font-family: "Pretendard";
   font-weight: bold;
-  margin-top: 180px;
+  margin-top: 300px;
   display: flex;
   justify-content: end;
   position: relative;
@@ -209,6 +213,6 @@ html {
 
 .move1 {
   position: relative;
-  top: 40px;
+  top: 100px;
 }
 

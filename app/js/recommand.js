@@ -474,6 +474,8 @@ const MBTI_Check4 = {
 }
 
 const img11 = document.querySelector(".imgg");
+const webtoon_title = document.querySelector(".webtoon_title"); 
+
 const mbtivalue1 = localStorage.getItem("mbti");
 console.log(mbtivalue1);
   
@@ -481,14 +483,18 @@ console.log(mbtivalue1);
   
 if (MBTI_Check1[mbtivalue1] != undefined) {
   img11.src = Random_MBTI1.img;
+  webtoon_title.innerText = Random_MBTI1.name;
 }
 else if(MBTI_Check2[mbtivalue1] != undefined) {
-   img11.src = Random_MBTI2.img;
+  img11.src = Random_MBTI2.img;
+  webtoon_title.innerText = Random_MBTI2.name;
 }
 else if(MBTI_Check3[mbtivalue1] != undefined) {
-   img11.src = Random_MBTI3.img;
+  img11.src = Random_MBTI3.img;
+  webtoon_title.innerText = Random_MBTI3.name;
 }
 else if(MBTI_Check4[mbtivalue1] != undefined) {
-   img11.src = Random_MBTI4.img;
+  img11.src = Random_MBTI4.img;
+  webtoon_title.innerText = Random_MBTI4.name;
 }
 

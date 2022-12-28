@@ -29,7 +29,7 @@ const MBTI = {
   SEXY: "SEXY",
 }
 
-HomeLogo.addEventListener("click", (event) => {
+HomeLogo.addEventListener("click", () => {
   event.preventDefault();
   window.location = "../../public/html/main.html";
 });
