@@ -9,6 +9,8 @@ html{
    
 }
 
+
+
 .hidden{
     display: none;
 }
@@ -20,7 +22,11 @@ html{
     font-style: normal;
 }
 
-
+.form_id{
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+}
 
 
 .B{

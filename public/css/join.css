@@ -29,10 +29,10 @@ html {
 }
 
 .center_font {
-  width: 380px;
-  height: 155px;
+  width: 21vw;
+  height: 15vh;
   position: relative;
-  right: 780px;
+  right: 750px;
   opacity: 85%;
 }
 
@@ -69,7 +69,7 @@ html {
 .font_img_div {
   position: relative;
   top: 50px;
-  width: 100vw;
+  width: 1900px;
 }
 
 .inputs {
@@ -94,7 +94,27 @@ html {
 }
 
 .PW_login {
-  margin: 5vh 0 5vh 0;
+  margin: 5vh 0 2vh 0;
+}
+
+.ID_login{
+  height: 5vh;
+  font-size: 16px;
+   text-indent: 10px;
+  font-family: inherit;
+   font-weight: bolder;
+   width: 520px;
+  border-radius: 8px;
+  border-color: red;
+  transition: 0.2s all linear;
+}
+
+.ID_login:hover{
+  transform: scale(1.01);
+}
+
+.ID_login::placeholder{
+  font-size: 13px;
 }
 
 .ALL {
@@ -184,4 +204,51 @@ html {
 
 .Home_logo:hover {
   transform: scale(1.08);
+}
+
+.email_N{
+  display: flex;
+  width: 600px;
+  height: 22px;
+ text-align: center;
+  position: relative;
+  justify-content: flex-start;
+  top:5px;
+}
+
+.checkemail{
+  position: relative;
+  height: 3vh;  
+  width: 20vw;
+  font-size:20px;
+  border-color: red;
+  border-radius: 5px;
+  font-weight: bold;
+  font-family: "Pretendard";
+}
+
+.checkemail::placeholder{
+  font-size: 17px;
+}
+
+
+.certification{
+  height: 3.6vh;
+  border-radius: 5px;
+  color:blue;
+  font-weight: bolder;
+  font-family: "Pretendard";
+  margin-left:143px;
+  transition: 0.2s all linear;
+}
+
+.certification:hover{
+  transform: scale(1.04);
+}
+
+.PW_error2{
+  color: red;
+  position: relative;
+  bottom:20px;
+  font-size:14px;
 }
