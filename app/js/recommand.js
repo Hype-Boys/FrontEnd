@@ -353,92 +353,92 @@ const MBTI4 = [
 
   {
     img: "../../public/webtoon/28.jpg",
-    name: "",
+    name: "ELECEED",
   },
 
   {
     img: "../../public/webtoon/36.jpg",
-    name: "",
+    name: "나노마신",
   },
 
   {
     img: "../../public/webtoon/38.jpg",
-    name: "",
+    name: "천망육성",
   },
 
   {
     img: "../../public/webtoon/41.jpg",
-    name: "",
+    name: "외모지상주의",
   },
 
   {
     img: "../../public/webtoon/52.jpg",
-    name: "",
+    name: "호랑이형님",
   },
 
   {
     img: "../../public/webtoon/58.jpg",
-    name: "",
+    name: "프리드로우",
   },
 
   {
     img: "../../public/webtoon/63.jpg",
-    name: "",
+    name: "약한영웅",
   },
 
   {
     img: "../../public/webtoon/64.jpg",
-    name: "",
+    name: "입학용병",
   },
 
   {
     img: "../../public/webtoon/66.jpg",
-    name: "",
+    name: "사형소년",
   },
 
   {
     img: "../../public/webtoon/75.jpg",
-    name: "",
+    name: "하복팽가 막내아들",
   },
 
   {
     img: "../../public/webtoon/77.jpg",
-    name: "",
+    name: "나쁜사람",
   },
 
   {
     img: "../../public/webtoon/83.jpg",
-    name: "",
+    name: "데드퀸",
   },
 
   {
     img: "../../public/webtoon/1.jpg",
-    name: "",
+    name: "참교육",
   },
 
   {
     img: "../../public/webtoon/6.jpg",
-    name: "",
+    name: "퀘스트 지상주의",
   },
 
   {
     img: "../../public/webtoon/8.jpg",
-    name: "",
+    name: "윈드 브레이커",
   },
 
   {
     img: "../../public/webtoon/12.jpg",
-    name: "",
+    name: "김부장",
   },
 
   {
     img: "../../public/webtoon/24.jpg",
-    name: "",
+    name: "격기3반",
   },
 
   {
     img: "../../public/webtoon/27.jpg",
-    name: "",
+    name: "HELLPER SEASON2",
   },
 ];
 
