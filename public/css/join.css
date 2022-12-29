@@ -11,6 +11,7 @@ html {
   display: none;
 }
 
+
 @font-face {
   font-family: "Pretendard";
   src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
@@ -242,6 +243,9 @@ html {
   transition: 0.2s all linear;
 }
 
+.PW_change_div{
+  margin-bottom:60px;
+}
 .certification:hover{
   transform: scale(1.04);
 }
@@ -251,4 +255,11 @@ html {
   position: relative;
   bottom:20px;
   font-size:14px;
+}
+
+.change_pw{
+  color:white;
+  font-family: "Pretendard";
+  font-size: 2.5rem;
+  font-weight: bold;
 }

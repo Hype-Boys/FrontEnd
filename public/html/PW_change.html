@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Page</title>
+    <link rel="stylesheet" href="../css/join.css" />
+    <script src="../../app/js/join.js" defer></script>
+    
+  </head>
+  <body>
+    <div class="Main">
+      <div class="Center">
+        <div class="font_div">
+          <div class="font_img_div">
+            <img src="../image/logo.png" alt="error" class="Home_logo" />
+
+          </div>
+        </div>
+        <div></div>
+        <div class="inputs">
+          <div class="line">
+            <div class="font_img"></div>
+            <div class="inputtt">
+             <div class="PW_change_div">
+
+                 <a class="change_pw">비밀번호 변경하기</a>
+             </div>
+              <div>
+                <input
+                  type="password"
+                  class="PW_login ALL"
+                  placeholder="바꿀 비밀번호를 입력해주세요     (최소 8글자 최대 15글자/대소영문자 사용)"
+                  required
+                  maxlength="18"
+                  onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = '바꿀 비밀번호를 입력해주세요     (최소 8글자 최대 15글자/대소영문자 사용)'"
+                />
+                <div>
+                  <a class="PW_error2 hidden"
+                        >형식이 맞지 않습니다</a
+                      >
+                </div>
+              </div>
+              <div>
+                <input
+                  type="password"
+                  class="PW_check ALL"
+                  placeholder="비밀번호를 재 입력해 주세요."
+                  onfocus="this.placeholder = ''"
+                  onblur="this.placeholder = '비밀번호를 재 입력해 주세요'"
+                />
+                <div class="error">
+                  <a class="PW_error hidden"
+                    >비밀번호가 틀렸습니다. 다시 입력해 주세요</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="login_button_div">
+              <form class="login_form">
+                <button class="login_button">비밀번호 바꾸기</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
