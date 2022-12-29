@@ -109,8 +109,8 @@ function check_pw(){
                 headers:{
                   "Content-type": "application/json"
                 },
+                
               })
-
               window.location = "../../public/html/index.html";
             });
             

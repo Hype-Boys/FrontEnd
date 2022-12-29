@@ -36,18 +36,18 @@
                                         
                                     <a class="id_error hidden">정확한 아이디를 입력하세요.</a>
                                 </div>
-                                <input class="PASSWORD" type="password" placeholder="비밀번호" required maxlength="18" />
+                                <input id="pw" class="PASSWORD" type="password" placeholder="비밀번호" required maxlength="18" />
                                 <div class="pw_error_div">
                                     <a class="pw_error hidden">정확한 비밀번호를 입력하세요.</a>
                                 </div>
                                 <div class="buttons">
 
                                     <form class="login_form">
-                                        <button onclick="loginBtn()" class="login_button BT">로그인</button>
+                                        <button type="button" onclick=loginBtn() class="login_button BT">로그인</button>
                                     </form>
 
                                     <form class="join_form">
-                                        <button class="join_button BT">회원가입</button>
+                                        <button type="button" class="join_button BT">회원가입</button>
                                     </form>      
                                    
                                 </div>

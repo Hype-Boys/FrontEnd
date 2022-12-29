@@ -41,7 +41,23 @@ function loginBtn() {
 			return;
 		}
     else {
-      //로그인
+      var id, pw
+      id = document.querySelector('#id').value;
+      pw = document.querySelector('#pw').value;
+      (async function loginBtn() {
+        await fetch("http://192.168.205.56:8080/WEBFLIX/auth", {
+          method: 'POST',
+          mode: 'cors',
+          body: JSON.stringify({
+            email: id,
+            password: pw,
+          }),
+          headers:{
+            "Content-type": "application/json"
+          },
+        })
+      })()
+
       loginbutton.addEventListener("submit", (event) => {
         event.preventDefault();
         window.location = "../../public/html/mbti.html";
