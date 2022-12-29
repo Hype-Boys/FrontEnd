@@ -40,6 +40,8 @@ showWebtoon.addEventListener("submit", (event) => {
   const eng = /^[A-Z]{4}/g;
 
   const mbtivalue = inputmbti.value;
+  console(MBTI_KEY);
+  localStorage.setItem(MBTI_KEY, mbtivalue);
   
 
     if (!eng.test(mbtivalue)) {
