@@ -353,7 +353,11 @@ const MBTI4 = [
 
   {
     img: "../../public/webtoon/28.jpg",
+<<<<<<< HEAD
     name: "일렉시드",
+=======
+    name: "ELECEED",
+>>>>>>> 9fe2f63a229e6dd1380c0bb3580229cb5b837861
   },
 
   {
@@ -363,7 +367,11 @@ const MBTI4 = [
 
   {
     img: "../../public/webtoon/38.jpg",
+<<<<<<< HEAD
     name: "천마육성",
+=======
+    name: "천망육성",
+>>>>>>> 9fe2f63a229e6dd1380c0bb3580229cb5b837861
   },
 
   {
@@ -373,7 +381,11 @@ const MBTI4 = [
 
   {
     img: "../../public/webtoon/52.jpg",
+<<<<<<< HEAD
     name: "호랑이 형님",
+=======
+    name: "호랑이형님",
+>>>>>>> 9fe2f63a229e6dd1380c0bb3580229cb5b837861
   },
 
   {
@@ -393,12 +405,20 @@ const MBTI4 = [
 
   {
     img: "../../public/webtoon/66.jpg",
+<<<<<<< HEAD
     name: "상형소년",
+=======
+    name: "사형소년",
+>>>>>>> 9fe2f63a229e6dd1380c0bb3580229cb5b837861
   },
 
   {
     img: "../../public/webtoon/75.jpg",
+<<<<<<< HEAD
     name: "하북팽가 막내아들",
+=======
+    name: "하복팽가 막내아들",
+>>>>>>> 9fe2f63a229e6dd1380c0bb3580229cb5b837861
   },
 
   {
@@ -423,7 +443,11 @@ const MBTI4 = [
 
   {
     img: "../../public/webtoon/8.jpg",
+<<<<<<< HEAD
     name: "윈드브레이커",
+=======
+    name: "윈드 브레이커",
+>>>>>>> 9fe2f63a229e6dd1380c0bb3580229cb5b837861
   },
 
   {
@@ -438,7 +462,11 @@ const MBTI4 = [
 
   {
     img: "../../public/webtoon/27.jpg",
+<<<<<<< HEAD
     name: "헬퍼2",
+=======
+    name: "HELLPER SEASON2",
+>>>>>>> 9fe2f63a229e6dd1380c0bb3580229cb5b837861
   },
 ];
 

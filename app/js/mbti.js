@@ -40,7 +40,9 @@ showWebtoon.addEventListener("submit", (event) => {
   const eng = /^[A-Z]{4}/g;
 
   const mbtivalue = inputmbti.value;
+  console(MBTI_KEY);
   localStorage.setItem(MBTI_KEY, mbtivalue);
+  
 
     if (!eng.test(mbtivalue)) {
       alert("4자/영어 또는 대문자로 입력해주세요");
