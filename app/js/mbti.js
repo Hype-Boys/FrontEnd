@@ -14,7 +14,8 @@ showWebtoon.addEventListener("submit", (event) => {
 
   event.preventDefault();
   const mbtivalue = inputmbti.value;
-  console(MBTI_KEY);  localStorage.setItem(MBTI_KEY, mbtivalue);
+  console(MBTI_KEY);
+  localStorage.setItem(MBTI_KEY, mbtivalue);
   window.location = "../../public/html/recommand.html";
 });
 
