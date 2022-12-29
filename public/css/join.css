@@ -190,7 +190,7 @@ body {
   font-size: 23px;
   font-weight: bold;
   position: relative;
-  top: 55px;
+  top: 30px;
   cursor: pointer;
   transition: 0.2s all linear;
 }

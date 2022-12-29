@@ -4,29 +4,11 @@ const loginbutton = document.querySelector(".login_form");
 const idInput = document.querySelector(".ID");
 const pwInput = document.querySelector(".PASSWORD");
 
-const id_error = document.querySelector(".id_error");
-const pw_error = document.querySelector(".pw_error");
-
-const form_id = document.querySelector(".form_id");
-let regex = new RegExp("[a-z0-9]+@[a-z]+.[a-z]+.[a-z]{2,3}");
-
-
-
-const pattern = /[^a-zA-Z](?=.*\d)(?=.*[@$!%*#?&]){16}/;
-const pattern2 = /^[A-Za-z0-9]{8,15}$/;
-
-
-
 
 HomeLogo.addEventListener("click", (event) => {
   event.preventDefault();
   window.location = "../../public/html/index.html";
 })
-
-loginbutton.addEventListener("submit", (event) => {
-  event.preventDefault();
-  window.location = "../../public/html/mbti.html";
-});
 
 joinbutton.addEventListener("click", (event) => {
   event.preventDefault();
@@ -34,42 +16,37 @@ joinbutton.addEventListener("click", (event) => {
 });
 
 
-//아이디 확인
-const onChange = (e) => {
- 
-  if (regex.test(e.target.value)) {
-    id_error.classList.add("hidden");
-  } else {
-    id_error.classList.remove("hidden");
-  }
-};
+function CheckId(str)
+{
+	let reg_id = /[s][0-9][0-9][0][0-9][0-9][@][g][s][m][.][h][s][.][k][r]/;
+    if(!reg_id.test(str)) {
+        return false;
+    }
+    else {
+        return true;
+    }
+}
 
-
-//비밀번호 확인
-const onChange2 = (t) => {
- 
-  if (pattern2.test(t.target.value)) {
-    pw_error.classList.add("hidden");
-  } else {  
-    pw_error.classList.remove("hidden");
-  }
-};
-
-
-
-idInput.addEventListener("change", onChange);
-pwInput.addEventListener("change", onChange2)
-
-
-
-
-
-
-
-
-
-
-
-
-
+function loginBtn() {
+  let obId = document.getElementById("id");
+	if (!obId.value) {
+		alert("아이디을 입력해주십시오.");
+		obId.focus();
+		return;
+	}
+	else {
+		if(!CheckId(obId.value)){
+			alert("아이디 형식이 잘못되었습니다.");
+			obId.focus();
+			return;
+		}
+    else {
+      //로그인
+      loginbutton.addEventListener("submit", (event) => {
+        event.preventDefault();
+        window.location = "../../public/html/mbti.html";
+      });
+    }
+	}
+}
 
