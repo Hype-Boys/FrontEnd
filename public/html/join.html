@@ -7,6 +7,7 @@
     <title>Join Page</title>
 
     <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
     <link rel="stylesheet" href="../css/join.css" />
     <script src="../../app/js/join.js" defer></script>
@@ -28,8 +29,8 @@
           <div class="line">
             <div class="font_img"></div>
             <div class="inputtt">
-              <form action="/email_post" method="post">
-                <input style="width: 500px;"
+              <form>
+                <input id="sendEmail" style="width: 500px;"
                   type="text"
                   class="ID_login ALL"
                   placeholder="이메일 주소를 입력해 주세요.    ex(s**0**@gsm.hs.kr)"
@@ -38,7 +39,7 @@
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = '이메일 주소를 입력해 주세요.    ex(s220xx@gsm.hs.kr)'"
                 />
-                <input style="width: 92px; height:30px; border-radius:5px; cursor:pointer;" type = "submit">
+                <button type="button" onclick=onclickSubmit() id="submit" style="width: 92px; height:30px; border-radius:5px; cursor:pointer;" type = "submit">제출</button>
               </form>
               <div class="email_N">
                 <input
@@ -83,8 +84,8 @@
               </div>
             </div>
             <div class="box_Personal">
-              <input type="checkbox" class="check_box" />
-              <a class="personal">개인정보 보호에 동의합니다.</a>
+              <input style="cursor: pointer;" type="checkbox" class="check_box" />
+              <a style="cursor:default;" class="personal">개인정보 보호에 동의합니다.</a>
             </div>
             <div class="login_button_div">
               <form class="login_form">

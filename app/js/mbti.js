@@ -31,7 +31,7 @@ const MBTI = {
 
 HomeLogo.addEventListener("click", () => {
   event.preventDefault();
-  window.location = "../../public/html/main.html";
+  window.location = "../../public/html/index.html";
 });
 
 
