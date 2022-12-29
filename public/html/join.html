@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Join Page</title>
+
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+
     <link rel="stylesheet" href="../css/join.css" />
     <script src="../../app/js/join.js" defer></script>
     <script src="/app/js/join.js" defer></script>
+    <script src="/app/js/app.js" defer></script>
     <link rel="icon" href="../image/logo.png">
   </head>
   <body>
@@ -25,16 +29,16 @@
             <div class="font_img"></div>
             <div class="inputtt">
               <form action="/email_post" method="post">
-                email : <input
+                <input style="width: 500px;"
                   type="text"
                   class="ID_login ALL"
-                  placeholder="이메일 주소를 입력해 주세요.    ex(s220xx@gsm.hs.kr)"
+                  placeholder="이메일 주소를 입력해 주세요.    ex(s**0**@gsm.hs.kr)"
                   required
                   maxlength="16"
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = '이메일 주소를 입력해 주세요.    ex(s220xx@gsm.hs.kr)'"
                 />
-                submit : <input type = "submit">
+                <input style="width: 92px; height:30px; border-radius:5px; cursor:pointer;" type = "submit">
               </form>
               <div class="email_N">
                 <input
@@ -44,7 +48,7 @@
                 onfocus="this.placeholder = ''"
                 onblur="this.placeholder = '인증번호를 입력하세요'"
                 />
-                <button class="certification">인증받기</button>
+                <button class="certification" style="cursor:pointer">번호확인</button>
               </div>
               
               <div>
