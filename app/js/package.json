@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Hype-Boys/WEBFLIX-FrontEnd/issues"
   },
-  "homepage": "https://github.com/Hype-Boys/WEBFLIX-FrontEnd#readme"
+  "homepage": "https://github.com/Hype-Boys/WEBFLIX-FrontEnd#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
 }

@@ -7,6 +7,7 @@
     <title>Join Page</title>
     <link rel="stylesheet" href="../css/join.css" />
     <script src="../../app/js/join.js" defer></script>
+    <script src="/app/js/join.js" defer></script>
     <link rel="icon" href="../image/logo.png">
   </head>
   <body>
@@ -23,8 +24,8 @@
           <div class="line">
             <div class="font_img"></div>
             <div class="inputtt">
-              <div>
-                <input
+              <form action="/email_post" method="post">
+                email : <input
                   type="text"
                   class="ID_login ALL"
                   placeholder="이메일 주소를 입력해 주세요.    ex(s220xx@gsm.hs.kr)"
@@ -33,7 +34,8 @@
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = '이메일 주소를 입력해 주세요.    ex(s220xx@gsm.hs.kr)'"
                 />
-              </div>
+                submit : <input type = "submit">
+              </form>
               <div class="email_N">
                 <input
                 type="text"
@@ -44,6 +46,7 @@
                 />
                 <button class="certification">인증받기</button>
               </div>
+              
               <div>
                 <input
                   type="password"
@@ -55,9 +58,9 @@
                   onblur="this.placeholder = '비밀번호를 입력해 주세요      (최소 8글자 최대 15글자/대소영문자 사용)'"
                 />
                 <div>
-                  <a class="PW_error2 hidden"
-                        >형식이 맞지 않습니다</a
-                      >
+                  <a class="PW_error2 hidden">
+                    형식이 맞지 않습니다
+                  </a>
                 </div>
               </div>
               <div>
