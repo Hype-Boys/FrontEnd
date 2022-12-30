@@ -5,7 +5,6 @@ const showWebtoon = document.querySelector(".check11");
 
 let a = document.getElementById("input_id");
 
-const MBTI_KEY = "mbti";
 
 
 
@@ -29,9 +28,11 @@ const MBTI = {
   SEXY: "SEXY",
 }
 
+const MBTI_KEY = "mbti";
+
+
 HomeLogo.addEventListener("click", () => {
-  event.preventDefault();
-  window.location = "../../public/html/main.html";
+  window.location = "../../public/html/index.html";
 });
 
 
@@ -40,15 +41,15 @@ showWebtoon.addEventListener("submit", (event) => {
   const eng = /^[A-Z]{4}/g;
 
   const mbtivalue = inputmbti.value;
-  console(MBTI_KEY);
   localStorage.setItem(MBTI_KEY, mbtivalue);
+  
 
     if (!eng.test(mbtivalue)) {
       alert("4자/영어 또는 대문자로 입력해주세요");
       return;
   }
   
-  console.log(MBTI[mbtivalue]);
+  
 
   if (MBTI[mbtivalue] != undefined) {
     window.location = "../../public/html/recommand.html";

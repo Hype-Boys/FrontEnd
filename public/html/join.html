@@ -4,16 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Join Page</title>
+    <title>SignUp</title>
+
     <link rel="stylesheet" href="../css/join.css" />
     <script src="../../app/js/join.js" defer></script>
+    <script src="/app/js/join.js" defer></script>
+    <script src="/app/js/app.js" defer></script>
+    <link rel="icon" href="../image/logo.png">
   </head>
   <body>
     <div class="Main">
       <div class="Center">
         <div class="font_div">
           <div class="font_img_div">
-            <img src="../image/logo.png" alt="error" class="Home_logo" />
+            <img src="../image/logo.png" alt="error" class="Home_logo" id="homeLogo" />
             <img class="center_font" src="../image/Wlogo.png" alt="" />
           </div>
         </div>
@@ -22,65 +26,73 @@
           <div class="line">
             <div class="font_img"></div>
             <div class="inputtt">
-              <div>
-                <input
+              <input onchange="name()" id="name" type="text" style="margin-bottom: 10px;" class="ID_login ALL" placeholder="이름" maxlength="6">
+              <form>
+                <input style="width: 500px;"
+                  name="inputValue" 
+                  id="inputValue"
+                  onchange="inputValueChange()"
                   type="text"
                   class="ID_login ALL"
-                  placeholder="이메일 주소를 입력해 주세요.    ex(s220xx@gsm.hs.kr)"
+                  placeholder="이메일 주소를 입력해 주세요.    ex(s**0**@gsm.hs.kr)"
                   required
                   maxlength="16"
                   onfocus="this.placeholder = ''"
                   onblur="this.placeholder = '이메일 주소를 입력해 주세요.    ex(s220xx@gsm.hs.kr)'"
                 />
-              </div>
+                <button type="button" onclick=onclickSubmit() id="submit" style="width: 92px; height:30px; border-radius:5px; cursor:pointer;" type = "submit">제출</button>
+              </form>
               <div class="email_N">
                 <input
+                onchange="inputNum()"
+                id="checkNum"
                 type="text"
                 class="checkemail"
                 placeholder="인증번호를 입력하세요"
                 onfocus="this.placeholder = ''"
                 onblur="this.placeholder = '인증번호를 입력하세요'"
                 />
-                <button class="certification">인증받기</button>
+                <button type="button" onclick="checkNum()" class="certification" style="cursor:pointer">번호확인</button>
               </div>
+              
               <div>
                 <input
+                  id="pw"
                   type="password"
                   class="PW_login ALL"
-                  placeholder="비밀번호를 생성해 주세요.     (최소 8글자 최대 15글자/대소영문자 사용)"
+                  placeholder="비밀번호를 생성해 주세요.     (최소 8글자 최대 16글자/대소영문자 사용)"
                   required
-                  maxlength="18"
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = '비밀번호를 입력해 주세요      (최소 8글자 최대 15글자/대소영문자 사용)'"
+                  maxlength="16"
+                  onchange="check_pw()"
                 />
                 <div>
-                  <a class="PW_error2 hidden"
-                        >형식이 맞지 않습니다</a
-                      >
+                  <a class="PW_error2 hidden">
+                    형식이 맞지 않습니다
+                  </a>
                 </div>
               </div>
               <div>
                 <input
+                  id="pw2"
                   type="password"
                   class="PW_check ALL"
                   placeholder="비밀번호를 재 입력해 주세요."
-                  onfocus="this.placeholder = ''"
-                  onblur="this.placeholder = '비밀번호를 재 입력해 주세요'"
+                  maxlength="18"
+                  onchange="check_pw()"
                 />
-                <div class="error">
-                  <a class="PW_error hidden"
-                    >비밀번호가 틀렸습니다. 다시 입력해 주세요</a
-                  >
+                <div class="password-check">
+                  <span id="check"></span>
                 </div>
               </div>
             </div>
             <div class="box_Personal">
-              <input type="checkbox" class="check_box" />
-              <a class="personal">개인정보 보호에 동의합니다.</a>
+              <input style="cursor: pointer;" type="checkbox" class="check_box" />
+              <a style="cursor:default;" class="personal">개인정보 보호에 동의합니다.</a>
             </div>
-            <div class="login_button_div">
-              <form class="login_form">
-                <button class="login_button">로그인 하러 가기</button>
+            <div class="signup_button_div">
+              <form class="signup_form" id="signUpForm">
+                <button class="signup_button" onclick="signup()">회원가입</button>
+
               </form>
             </div>
           </div>

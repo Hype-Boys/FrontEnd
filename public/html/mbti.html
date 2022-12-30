@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MBTI Page</title>
+    <link rel="icon" href="/public/image/logo.png">
     <link rel="stylesheet" href="../css/mbti.css" />
     <script src="../../app/js/mbti.js" defer></script>
   </head>
@@ -26,7 +27,7 @@
               onfocus="this.placeholder = ''"
               onblur="this.placeholder = 'MBTI를 입력하세요'"
             />
-            <button class="check_MBTI"><a class="result">결과 보기</a></button>
+            <button onclick="result()" style="cursor: pointer;" class="check_MBTI"><a class="result">결과 보기</a></button>
           </form>
         </div>
       </div>

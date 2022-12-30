@@ -33,8 +33,13 @@ html {
   height: 9vh;
   background-color: #292828;
   display: flex;
-  position: relative;
+  position: fixed;
   bottom: 25px;
+  margin: 0;
+  padding: 0;
+  top: -1px;
+  width: 2000px;
+  z-index: 1;
 }
 
 .move {

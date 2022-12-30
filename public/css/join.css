@@ -7,9 +7,18 @@ html {
   background-size: cover; /*배경 부셔지지 않도록 고정시킴.*/
 }
 
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+
 .hidden {
   display: none;
 }
+
 
 @font-face {
   font-family: "Pretendard";
@@ -32,7 +41,7 @@ html {
   width: 21vw;
   height: 15vh;
   position: relative;
-  right: 750px;
+  right: 790px;
   opacity: 85%;
 }
 
@@ -166,12 +175,12 @@ html {
   font-size: 14px;
 }
 
-.login_button_div {
+.signup_button_div {
   display: flex;
   justify-content: center;
 }
 
-.login_button {
+.signup_button {
   width: 610px;
   height: 7vh;
   border-radius: 7px;
@@ -181,12 +190,12 @@ html {
   font-size: 23px;
   font-weight: bold;
   position: relative;
-  top: 55px;
+  top: 30px;
   cursor: pointer;
   transition: 0.2s all linear;
 }
 
-.login_button:hover {
+.signup_button:hover {
   transform: scale(1.02);
   color: black;
 }
@@ -200,6 +209,7 @@ html {
   position: relative;
   bottom: 105px;
   transition: 0.2s all linear;
+  margin-left: 200px;
 }
 
 .Home_logo:hover {
@@ -218,7 +228,7 @@ html {
 
 .checkemail{
   position: relative;
-  height: 3vh;  
+  height: 4vh;  
   width: 20vw;
   font-size:20px;
   border-color: red;
@@ -233,7 +243,8 @@ html {
 
 
 .certification{
-  height: 3.6vh;
+  width: 70vh;
+  height: 5vh;
   border-radius: 5px;
   color:blue;
   font-weight: bolder;
@@ -242,6 +253,9 @@ html {
   transition: 0.2s all linear;
 }
 
+.PW_change_div{
+  margin-bottom:60px;
+}
 .certification:hover{
   transform: scale(1.04);
 }
@@ -251,4 +265,11 @@ html {
   position: relative;
   bottom:20px;
   font-size:14px;
+}
+
+.change_pw{
+  color:white;
+  font-family: "Pretendard";
+  font-size: 2.5rem;
+  font-weight: bold;
 }
