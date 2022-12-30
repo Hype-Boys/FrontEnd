@@ -2,7 +2,7 @@ const newSignUp = document.getElementById('signUpForm')
 const HomeLogo = document.getElementById('homeLogo')
 
 HomeLogo.addEventListener("click", (e) => {
-  window.location = "../../public/html/index.html";
+  window.location = "/public/html/index.html";
 });
 
 var inputValue;
@@ -103,7 +103,7 @@ function check_pw(){
                 },
                 
               })
-              window.location = "../../public/html/index.html";
+              window.location = "/public/html/index.html";
             });
             
         }

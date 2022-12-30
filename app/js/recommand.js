@@ -12,7 +12,6 @@ const bgImage = document.createElement("img");
 const logo2 = document.querySelector(".logo");
 
 logo2.addEventListener("click", (event) => {
-  event.preventDefault();
   window.location = "../../public/html/index.html";
 });
 

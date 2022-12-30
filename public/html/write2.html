@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>글쓰기</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../images/EggTart_icon_invers.png" />
+    <!--Google Fonts - 나눔고딕-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet" />
+    <!--Google Material Icons-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+
+    <link rel="stylesheet" href="../css/main.css" />
+
+    <link rel="icon" href="../image/logo.png" />
+
+    <script src="/app/js/border.js"></script>
+    
+</head>
+<body>
+    <div class="choose_center">
+        <div class="move">
+          <img class="logo" src="../images/WEBFLEX.png" alt="" />
+          <div class="check_font">
+              <a href="./recommand.html">
+                  <span class="font">랜덤 웹툰 </span>
+              </a>
+          </div>
+        </div>
+      </div>
+  
+
+
+    <div class="board_wrap_write">
+        <div class="board_list_wrap">
+            <div class="board_write">
+                <div class="title">
+                    <dl>
+                        <dt>제목</dt>
+                        <dd><input onchange="titleOn()" type="text" id="title" placeholder="제목 입력"></dd>
+                    </dl>
+                </div>
+                <div class="info">
+                    <dl>
+                        <dt>글쓴이</dt>
+                        <dd><input onchange="userNameOn()" type="text" id="userName" placeholder="글쓴이 입력"></dd>
+                    </dl>
+                </div>
+                <div class="cont">
+                    <textarea onblur="contentOn()" placeholder="내용 입력" id="content"></textarea>
+                </div>
+            </div>
+            <div class="bt_wrap">
+                <a href="./list.html" onclick="goAdd()" class="on">등록</a>
+                <a href="./list.html">취소</a>
+            </div>
+        </div>
+    </div>
+ 
+</body>
+</html> 
