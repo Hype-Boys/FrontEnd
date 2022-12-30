@@ -5,7 +5,6 @@ const showWebtoon = document.querySelector(".check11");
 
 let a = document.getElementById("input_id");
 
-const MBTI_KEY = "mbti";
 
 
 
@@ -29,8 +28,10 @@ const MBTI = {
   SEXY: "SEXY",
 }
 
+const MBTI_KEY = "mbti";
+
+
 HomeLogo.addEventListener("click", () => {
-  event.preventDefault();
   window.location = "../../public/html/index.html";
 });
 
@@ -40,7 +41,6 @@ showWebtoon.addEventListener("submit", (event) => {
   const eng = /^[A-Z]{4}/g;
 
   const mbtivalue = inputmbti.value;
-  console(MBTI_KEY);
   localStorage.setItem(MBTI_KEY, mbtivalue);
   
 
@@ -49,7 +49,7 @@ showWebtoon.addEventListener("submit", (event) => {
       return;
   }
   
-  console.log(MBTI[mbtivalue]);
+  
 
   if (MBTI[mbtivalue] != undefined) {
     window.location = "../../public/html/recommand.html";

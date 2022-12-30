@@ -1,19 +1,11 @@
-const getUsers = () => {
-  axios.get('https://b039-210-218-52-13.jp.ngrok.io')
-}
-
-const newlogin = document.querySelector(".login_form");
-
-
-const HomeLogo = document.querySelector(".Home_logo");
+const newSignUp = document.getElementById('signUpForm')
+const HomeLogo = document.getElementById('homeLogo')
 
 HomeLogo.addEventListener("click", (e) => {
   window.location = "../../public/html/index.html";
 });
 
-
 var inputValue;
-
 function inputValueChange(){
   inputValue = document.getElementById('inputValue').value;
 }
@@ -93,10 +85,10 @@ function check_pw(){
             document.getElementById('check').innerHTML='비밀번호가 일치합니다.'
             document.getElementById('check').style.color='blue';
 
-            newlogin.addEventListener("submit", async (event) => {
+            newSignUp.addEventListener("submit", async (event) => {
               event.preventDefault();
-              name()
-              check_pw()
+              name();
+              check_pw();
 
               await fetch("http://192.168.205.56:8080/WEBFLIX/auth/signup", {
                 method: 'POST',

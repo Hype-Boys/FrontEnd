@@ -175,12 +175,12 @@ body {
   font-size: 14px;
 }
 
-.login_button_div {
+.signup_button_div {
   display: flex;
   justify-content: center;
 }
 
-.login_button {
+.signup_button {
   width: 610px;
   height: 7vh;
   border-radius: 7px;
@@ -195,7 +195,7 @@ body {
   transition: 0.2s all linear;
 }
 
-.login_button:hover {
+.signup_button:hover {
   transform: scale(1.02);
   color: black;
 }
@@ -209,6 +209,7 @@ body {
   position: relative;
   bottom: 105px;
   transition: 0.2s all linear;
+  margin-left: 200px;
 }
 
 .Home_logo:hover {

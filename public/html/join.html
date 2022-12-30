@@ -6,9 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SignUp</title>
 
-    <script src="./node_modules/axios/dist/axios.min.js"></script>
-    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
     <link rel="stylesheet" href="../css/join.css" />
     <script src="../../app/js/join.js" defer></script>
     <script src="/app/js/join.js" defer></script>
@@ -20,7 +17,7 @@
       <div class="Center">
         <div class="font_div">
           <div class="font_img_div">
-            <img src="../image/logo.png" alt="error" class="Home_logo" />
+            <img src="../image/logo.png" alt="error" class="Home_logo" id="homeLogo" />
             <img class="center_font" src="../image/Wlogo.png" alt="" />
           </div>
         </div>
@@ -92,9 +89,10 @@
               <input style="cursor: pointer;" type="checkbox" class="check_box" />
               <a style="cursor:default;" class="personal">개인정보 보호에 동의합니다.</a>
             </div>
-            <div class="login_button_div">
-              <form class="login_form">
-                <button class="login_button" onclick="signup()">회원가입</button>
+            <div class="signup_button_div">
+              <form class="signup_form" id="signUpForm">
+                <button class="signup_button" onclick="signup()">회원가입</button>
+
               </form>
             </div>
           </div>

@@ -1,6 +1,6 @@
 const joinbutton = document.querySelector(".join_form");
 const HomeLogo = document.querySelector(".Home_logo");
-const loginbutton = document.querySelector(".login_form");
+const loginbutton = document.querySelector('.signup_button');
 const idInput = document.querySelector(".ID");
 const pwInput = document.querySelector(".PASSWORD");
 
@@ -56,13 +56,9 @@ function loginBtn() {
             "Content-type": "application/json"
           },
         })
+        window.location = "../../public/html/mbti.html";
       })()
 
-      loginbutton.addEventListener("submit", (event) => {
-        event.preventDefault();
-        window.location = "../../public/html/mbti.html";
-      });
     }
 	}
 }
-
