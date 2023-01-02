@@ -24,7 +24,7 @@
 
     <div class="choose_center">
       <div class="move">
-        <img class="logo" src="../images/WEBFLEX.png" alt="" />
+        <img class="logo" src="../image/WEBFLEX.png" alt="" />
         <div class="check_font">
             <a href="./recommand.html">
                 <span class="font">랜덤 웹툰 </span>
@@ -45,40 +45,40 @@
                     <div class="date">작성일</div>
                     <div class="count">조회</div>
                 </div>
-                <div id="goView">
+                <div onclick="goFake()" id="sampleDiv">
                     <div class="num">5</div>
-                    <div class="title">글 제목이 들어갑니당</div>
-                    <div class="writer">김이름</div>
-                    <div class="date">2022.11.11</div>
-                    <div class="count">33</div>
+                    <div class="title">웹플릭스 실화냐;;</div>
+                    <div class="writer">송혀누</div>
+                    <div class="date">2023.01.02</div>
+                    <div class="count">1</div>
                 </div>
-                <div id="goView">
+                <div onclick="goView()">
                     <div class="num">4</div>
                     <div class="title">글 제목이 들어갑니당</div>
                     <div class="writer">김이름</div>
-                    <div class="date">2022.11.11</div>
-                    <div class="count">33</div>
+                    <div class="date">2023.01.02</div>
+                    <div class="count">1</div>
                 </div>
-                <div id="goView">
+                <div  onclick="goView()">
                     <div class="num">3</div>
                     <div class="title">글 제목이 들어갑니당</div>
                     <div class="writer">김이름</div>
-                    <div class="date">2022.11.11</div>
-                    <div class="count">33</div>
+                    <div class="date">2023.01.02</div>
+                    <div class="count">2</div>
                 </div>
-                <div id="goView">
+                <div  onclick="goView()">
                     <div class="num">2</div>
                     <div class="title">글 제목이 들어갑니당</div>
                     <div class="writer">김이름</div>
-                    <div class="date">2022.11.11</div>
-                    <div class="count">33</div>
+                    <div class="date">2023.01.02</div>
+                    <div class="count">3</div>
                 </div>
-                <div id="goView">
+                <div  onclick="goView()">
                     <div class="num">1</div>
                     <div class="title">글 제목이 들어갑니당</div>
                     <div class="writer">김이름</div>
-                    <div class="date">2022.11.11</div>
-                    <div class="count">33</div>
+                    <div class="date">2023.01.02</div>
+                    <div class="count">3</div>
                 </div>
             </div>
             <div class="board_page">
@@ -89,10 +89,17 @@
                 <a href="javascript:void(0)" class="bt last">>></a>
             </div>
             <div class="bt_wrap">
-                <a href="./write2.html" class="on">등록</a>
+                <a href="./writeFake.html" class="on">등록</a>
             </div>
         </div>
     </div>
- 
+    <script>
+        const value = localStorage.getItem("a")
+        document.querySelector("#sampleDiv").style.display = value ? "block" : "none"
+
+        function goFake() {
+            window.location = "/public/html/viewFake"
+          }
+    </script>
 </body>
 </html> 

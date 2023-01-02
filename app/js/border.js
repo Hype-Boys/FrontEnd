@@ -1,8 +1,6 @@
-const goView = document.getElementById("goView");
-
-goView.addEventListener("click", (event) => {
-    window.location = "/public/html/view2.html";
-});
+function goView () {
+  window.location = "/public/html/view2.html";
+}
 
 var title, userName, content;
 
@@ -31,6 +29,19 @@ async function goAdd() {
     })
 }
 
+
+function goAdd() {
+  const value = localStorage.getItem("a")
+  document.getElementById("sampleDiv").style.display = value ? 'none' : ""
+  
+}
+
+function goAddFake() {
+  localStorage.setItem("a", 'visible')
+
+  document.getElementById("sampleDiv").style.visibility ='visible';	
+  document.getElementById("sampleDiv").style.height ='45px';	
+}
 
 // function goAdd() {
 //     await fetch("http://192.168.205.56:8080/WEBFLIX/board/add", {
